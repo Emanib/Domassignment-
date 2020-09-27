@@ -43,3 +43,31 @@ const siteContent = {
 };
 
 // write your code here
+// imgs 
+const logo = document.getElementById("logo-img"); 
+logo.src =siteContent.nav['img-src'];
+const imgSnip = document.getElementById("cta-img");
+imgSnip.src = siteContent.cta['img-src'];
+const middlehimg = document.getElementById("middle-img");
+middlehimg.src = siteContent['main-content']["middle-img-src"];
+// navs 
+const navs =document.querySelectorAll('a');
+let i =0;
+while(i< navs.length)
+{
+  navs[i].textContent= siteContent.nav["nav-item-"+(i+1)];
+  navs[i].style.color= "green"; 
+  i++; 
+}
+// section (1)
+//h1
+const h1 = document.querySelector('body > div > section.cta > div > h1');
+h1.textContent = siteContent.cta.h1;
+//button 
+const button = document.querySelector('body > div > section.cta > div > button');
+button.textContent =siteContent.cta.button;
+
+
+
+
+
