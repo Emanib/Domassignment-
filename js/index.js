@@ -67,7 +67,32 @@ h1.textContent = siteContent.cta.h1;
 const button = document.querySelector('body > div > section.cta > div > button');
 button.textContent =siteContent.cta.button;
 
-
-
-
+// top content 
+// top (1)
+const top_h4 = document.querySelector('body > div > section.main-content > div.top-content > div:nth-child(1) > h4');
+console.log(top_h4);
+top_h4.textContent =  siteContent["main-content"]["features-h4"];
+const top_p = document.querySelector('body > div > section.main-content > div.top-content > div:nth-child(1) > p');
+top_p.textContent = siteContent["main-content"]["features-content"];
+// top (2)
+const top_h42 = document.querySelector('body > div > section.main-content > div.top-content > div:nth-child(2) > h4');
+top_h42.textContent =siteContent["main-content"]["about-h4"];
+const top_p2 = document.querySelector('body > div > section.main-content > div.top-content > div:nth-child(2) > p');
+top_p2.textContent =siteContent["main-content"]["about-content"];
+// bottom content 
+//bottom (1)
+const bot_h4 = document.querySelector('body >div > section.main-content > div.bottom-content > div:nth-child(1) > h4');
+bot_h4.textContent = siteContent["main-content"]["services-h4"];
+const bot_p = document.querySelector('body >div > section.main-content > div.bottom-content > div:nth-child(1) > p');
+bot_p.textContent = siteContent["main-content"]["services-content"];
+// bottom (2)
+const bot_h41 = document.querySelector('body >div > section.main-content > div.bottom-content > div:nth-child(2) > h4');
+bot_h41.textContent = siteContent["main-content"]["product-h4"];
+const bot_p1 = document.querySelector('body >div > section.main-content > div.bottom-content > div:nth-child(2) > p');
+bot_p1.textContent = siteContent["main-content"]["product-content"];
+// bottom (3)
+const bot_h42 = document.querySelector('body >div > section.main-content > div.bottom-content > div:nth-child(3) > h4');
+bot_h42.textContent =siteContent["main-content"]["vision-h4"];
+const bot_p2 = document.querySelector('body >div > section.main-content > div.bottom-content > div:nth-child(3) > p');
+bot_p2.textContent =siteContent["main-content"]["vision-content"];
 
