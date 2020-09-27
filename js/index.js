@@ -59,6 +59,15 @@ while(i< navs.length)
   navs[i].style.color= "green"; 
   i++; 
 }
+const item1 =document.createElement('a');
+item1.textContent ="new"; 
+const news = document.querySelector('body > div > header >nav');
+news.appendChild(item1);
+const item2 =document.createElement('a');
+item2.textContent= "Tools"
+item2.style.color ="green";
+item1.style.color ="green";
+news.appendChild(item2);
 // section (1)
 //h1
 const h1 = document.querySelector('body > div > section.cta > div > h1');
@@ -70,7 +79,7 @@ button.textContent =siteContent.cta.button;
 // top content 
 // top (1)
 const top_h4 = document.querySelector('body > div > section.main-content > div.top-content > div:nth-child(1) > h4');
-console.log(top_h4);
+//console.log(top_h4);
 top_h4.textContent =  siteContent["main-content"]["features-h4"];
 const top_p = document.querySelector('body > div > section.main-content > div.top-content > div:nth-child(1) > p');
 top_p.textContent = siteContent["main-content"]["features-content"];
@@ -95,4 +104,15 @@ const bot_h42 = document.querySelector('body >div > section.main-content > div.b
 bot_h42.textContent =siteContent["main-content"]["vision-h4"];
 const bot_p2 = document.querySelector('body >div > section.main-content > div.bottom-content > div:nth-child(3) > p');
 bot_p2.textContent =siteContent["main-content"]["vision-content"];
+
+// contact 
+const cont_h4 = document.querySelector('body > div > section.contact > h4');
+//console.log(cont_h4);
+cont_h4.textContent = siteContent.contact["contact-h4"];
+const p_1 = document.querySelector('body > div > section.contact > p:nth-child(2)');
+p_1.textContent = siteContent.contact.address;
+const p_2 = document.querySelector('body > div > section.contact > p:nth-child(3)');
+p_2.textContent = siteContent.contact.phone;
+const p_3 = document.querySelector('body > div > section.contact > p:nth-child(4)');
+p_3.textContent = siteContent.contact.email;
 
