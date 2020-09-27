@@ -115,4 +115,7 @@ const p_2 = document.querySelector('body > div > section.contact > p:nth-child(3
 p_2.textContent = siteContent.contact.phone;
 const p_3 = document.querySelector('body > div > section.contact > p:nth-child(4)');
 p_3.textContent = siteContent.contact.email;
+//footer 
+const foot = document.querySelector('body > div > footer >p');
+foot.textContent = siteContent.footer.copyright;
 
